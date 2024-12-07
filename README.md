@@ -1,7 +1,7 @@
 # LLM2FedLLM - Simulating LLMs in Federated Setting
 
 ## Description
-This repository contains the code for simulating the performance of Language Model Models (LLMs) in a federated learning setting. The code is designed to simulate the performance of LLMs in a federated learning setting using the FedAvg algorithm. The code is designed to be modular and can be easily extended to other LLMs and federation algorithms.
+This repository contains the code for simulating the fine-tuning of Language Model Models (LLMs) in a federated learning setting for Code Tasks. The users can configuare the model, fine-tuning technique, federated aggregation implementations for the FL simulation according to code task at hand. 
 
 ## Setup
 ### Install dependencies
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ### Configure the project
 - Place your HuggingFace Access Token in the .env file.
-- Modify the experiments/configs/fed_config.py and experiments/configs/llm_config.py files to set the desired configurations for the federated learning setting and LLM experiments respectively.
+- Modify the experiments/configs/fed_config.py and experiments/configs/llm_config.py files to set the desired configurations for the federated learning setting and LLM fine-tuning respectively.
 - Unzip the datasets.zip file in the experiments directory to get the sample datasets.
 
 ## Run
@@ -52,12 +52,12 @@ python3 fed0.py
 
 ### Federated Learning (n round) (Fedn)
 - Edit the fed_config.py file to set the desired number of rounds.
-- Run the federated learning script to train & evaluate the LLM in the federated setting using FedAvg.
+- Run the federated learning script to train & evaluate the LLM in the federated setting using any Federated aggregation implentation such as FedAvg.
 ```bash
 python3 fedn.py
 ```
 
-By default the experiment will run the evaluation for central, fed0, fedn setting and generated the results in the output directory and annecdotal results in the experiments directory.
+By default the experiment will run the evaluation for central, fed0, fedn setting and generate the metric results in the output directory and anecdotal results in the experiments directory.
 
 ### Federated Learning (Fedn Best Evaluation)
 - Edit the run_fedNBest to True and set the id of the best model to be used for the federated learning evaluation.
