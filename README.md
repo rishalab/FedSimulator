@@ -1,7 +1,7 @@
 # LLM2FedLLM - Simulating LLMs in Federated Setting
 
 ## Description
-This repository contains the code for simulating the fine-tuning of Language Model Models (LLMs) in a federated learning setting for Code Tasks. The users can configuare the model, fine-tuning technique, federated aggregation implementations for the FL simulation according to code task at hand. 
+This repository contains the code for simulating the fine-tuning of Language Model Models (LLMs) in a federated learning setting for Code Tasks. The users can configure the model, fine-tuning technique, federated aggregation implementations for the FL simulation according to code task at hand. 
 
 ## Setup
 ### Install dependencies
