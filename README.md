@@ -3,6 +3,8 @@
 ## Description
 This repository contains the code for simulating the fine-tuning of Language Model Models (LLMs) in a federated learning setting for Code Tasks. The users can configure the model, fine-tuning technique, federated aggregation implementations for the FL simulation according to code task at hand. 
 
+## Tool demonstration video: https://youtu.be/-byKkaiBchw
+
 ## Setup
 ### Install dependencies
 ```bash
